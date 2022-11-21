@@ -11,9 +11,9 @@ function Header() {
 
     console.log(signedIn)
     return ( 
-        <div className="flex justify-between items-center bg-transparent p-2">
+        <div className="flex justify-between items-center bg-transparent p-2 flex-wrap">
 
-            <div className="flex items-center text-white gap-10 px-5">
+            <div className="flex items-center text-white gap-10 px-5 flex-wrap">
                 <div className="w-[150px]">
                     <img src={Logo} alt="" />
                 </div>
