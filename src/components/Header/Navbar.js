@@ -1,8 +1,15 @@
-import React from "react";
-import Logo from "../images/netflix-logo.png"
+import React, {useContext, useState} from "react";
+import Logo from "/home/user/Desktop/spaex/netflix-clone-react-final-project/src/images/netflix-logo.png"
 import Search from "./Search";
+import { Context } from "../UserList"
+
 
 function Header() {
+
+    const {signedIn, setSignedIn} = useContext(Context);
+
+
+    console.log(signedIn)
     return ( 
         <div className="flex justify-between items-center bg-transparent p-2">
 
@@ -19,10 +26,11 @@ function Header() {
                     </ul>
                 </div>
             </div>
-            <div className="flex text-white gap-5 pl-4">
+            <div className="flex text-white gap-5 pl-4 items-center mr-4">
                 <Search />
                 <img src="" alt="" />
-                <p className="border-2">User Name</p>
+                <p className="">Welcome {signedIn.user}</p>
+                <img src={signedIn.image} alt="" className="w-[3rem]" />
             </div>
         </div>
      );
