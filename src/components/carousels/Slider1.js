@@ -26,8 +26,6 @@ function Slider1({ movies }) {
     },
   };
 
-  console.log(movies);
-  // movies && console.log(movies[2]?.poster_path);
   return (
     // <div className="carousel-container">
     <Carousel
@@ -48,6 +46,7 @@ function Slider1({ movies }) {
     >
       {movies?.map((movie, idx) => (
         <img
+          key={idx}
           src={`https://image.tmdb.org/t/p/original${movie.poster_path} `}
           alt="film"
           className="image item"

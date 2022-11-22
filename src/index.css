@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body > div {
   background-color: black;
 }

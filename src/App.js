@@ -8,6 +8,7 @@ import Category3 from "./components/categories/Category3";
 import Category4 from "./components/categories/Category4";
 import Slider1 from "./components/carousels/Slider1";
 import Slider2 from "./components/carousels/Slider2";
+// import PopUp from "./components/PopUp";
 
 function App() {
   const movies = useGetMovie(
@@ -23,7 +24,7 @@ function App() {
 
   console.log(movies);
   return (
-    <div className="main">
+    <div className="main relative">
       <Category title={Categories} />
 
       {movies && movies?.results.length > 0 && (
@@ -49,6 +50,10 @@ function App() {
       {movies && movies?.results.length > 0 && (
         <Slider2 movies={movies.results} />
       )}
+
+      {/* {movies && movies?.results.length > 0 && (
+        <PopUp movies={movies.results} />
+      )} */}
     </div>
   );
 }

@@ -1,0 +1,71 @@
+.pop-up {
+  width: 100vw;
+  z-index: 99;
+  padding: 6%;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: antiquewhite;
+}
+.pop-header {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+}
+
+.info {
+  color: white;
+}
+.vote {
+  color: rgb(94, 255, 0);
+  margin-left: 3rem;
+}
+.overview {
+  width: 50%;
+  padding: 40px;
+  margin: 10px;
+  color: #948888;
+}
+
+.play {
+  color: white;
+  background-color: red;
+  width: 7rem;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-right: 2rem;
+  padding-bottom: 5px;
+  margin-left: 3rem;
+}
+.play-icon {
+  position: relative;
+  top: 17px;
+  left: 5px;
+  font-size: 1.5rem;
+}
+
+.wish {
+  color: white;
+  background-color: black;
+  width: 7rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid white;
+  padding-bottom: 5px;
+}
+.wish-icon {
+  position: relative;
+  top: 17px;
+  left: 5px;
+  margin-right: 10px;
+  font-size: larger;
+}
+
+#content {
+  display: none;
+}

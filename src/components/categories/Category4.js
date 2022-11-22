@@ -1,5 +1,4 @@
 function Category({ title }) {
-  console.log(title);
   return (
     <div
       style={{

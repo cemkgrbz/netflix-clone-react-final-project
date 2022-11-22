@@ -47,3 +47,6 @@
   max-width: 100%;
   min-width: 230px;
 }
+#content {
+  display: none;
+}
