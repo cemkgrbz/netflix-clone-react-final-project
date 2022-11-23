@@ -3,7 +3,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Slider2.css";
 import PopUp from "../PopUp";
-// import { useState } from "react";
 
 function Slider2({ movies }) {
   const responsive = {
@@ -28,8 +27,6 @@ function Slider2({ movies }) {
       partialVisibilityGutter: 20,
     },
   };
-
-  console.log(movies);
 
   const [basicModal, setBasicModal] = useState(false);
   const toggleShow = () => setBasicModal(!basicModal);
@@ -56,7 +53,6 @@ function Slider2({ movies }) {
         {movies?.map((movie, idx) => (
           <div key={idx}>
             <img
-              id="imgID"
               onClick={() => {
                 setPopup(
                   <PopUp
@@ -67,7 +63,7 @@ function Slider2({ movies }) {
                     setBasicModal={setBasicModal}
                   />
                 );
-                console.log(popup);
+
                 toggleShow();
               }}
               src={`https://image.tmdb.org/t/p/original${movie.poster_path} `}

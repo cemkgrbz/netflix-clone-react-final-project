@@ -22,7 +22,6 @@ function App() {
     { name4: "Comedy" },
   ];
 
-  console.log(movies);
   return (
     <div className="main relative">
       <Category title={Categories} />
@@ -50,10 +49,6 @@ function App() {
       {movies && movies?.results.length > 0 && (
         <Slider2 movies={movies.results} />
       )}
-
-      {/* {movies && movies?.results.length > 0 && (
-        <PopUp movies={movies.results} />
-      )} */}
     </div>
   );
 }
