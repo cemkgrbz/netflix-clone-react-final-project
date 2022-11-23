@@ -7,6 +7,8 @@ import MainContent from './components/Header/MainContent';
 import SignIn from './components/SignIn';
 import Register from './components/Register';
 import ContextProvider from "./components/UserList"
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +18,7 @@ root.render(
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
 
-        <Route path="/" element={<MainContent />} />
+        <Route path="/mc" element={<MainContent />} />
 
         <Route path="/" element={<App />} />
       </Routes>
