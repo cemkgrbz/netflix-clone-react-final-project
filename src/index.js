@@ -15,12 +15,10 @@ root.render(
   <ContextProvider>
   <BrowserRouter>
       <Routes>
+        <Route path="/" element={<App />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
-
         <Route path="/mc" element={<MainContent />} />
-
-        <Route path="/" element={<App />} />
       </Routes>
   </BrowserRouter>
   </ContextProvider>
