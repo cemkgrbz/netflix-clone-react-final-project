@@ -25,7 +25,7 @@ const ContextProvider = ({ children }) => {
   const [signedIn, setSignedIn] = useState([{}]);
 
   const [movie, setMovie] = useState();
-  const [myList, setMylist] = useState([]);
+  const [myList, setMyList] = useState([]);
 
   useEffect(() => {
     async function getData() {
@@ -44,7 +44,7 @@ const ContextProvider = ({ children }) => {
   }, []);
 
   return (
-    <Context.Provider value={{users, setUsers, signedIn, setSignedIn, movie, setMovie, myList, setMylist}}>
+    <Context.Provider value={{users, setUsers, signedIn, setSignedIn, movie, setMovie, myList, setMyList}}>
 
       {children}
     </Context.Provider>
