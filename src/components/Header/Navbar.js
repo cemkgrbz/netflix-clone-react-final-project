@@ -8,10 +8,6 @@ import { Link } from "react-router-dom";
 function Header({ movies }) {
   const { signedIn, setSignedIn } = useContext(Context);
 
-function Header() {
-
-    const {signedIn, setSignedIn} = useContext(Context);
-
 
     console.log(signedIn)
     return ( 
@@ -29,21 +25,12 @@ function Header() {
                 </div>
             </div>
             <div className="flex text-white gap-5 pl-4 items-center mr-4">
-                <Search />
+                <Search movies={movies}/>
                 <img src="" alt="" />
                 <p className="mt-3">Welcome {signedIn.user}</p>
                 <img src={signedIn.image} alt="" className="w-[3rem]" />
             </div>
-        </div>
-      </div>
-      <div className="flex text-white gap-5 pl-4 items-center mr-4">
-        <Search movies={movies} />
-        <img src="" alt="" />
-        <p className="">Welcome {signedIn.user}</p>
-        <img src={signedIn.image} alt="" className="w-[3rem]" />
-      </div>
-    </div>
-  );
+        </div>);
 }
 
 export default Header;
