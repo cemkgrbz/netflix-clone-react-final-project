@@ -33,9 +33,9 @@ function Register() {
     <div>   
         <div className="border-b border-gray-500 flex items-center justify-between">
             <img src={Logo} alt="" className="w-[14rem] p-3 " />
-            <Link to={"/sign-in"}><div className="mr-5 text-xl hover:underline-offset-auto">Sign In</div></Link> 
+            <Link to={"/"}><div className="mr-5 text-xl hover:underline-offset-auto">Sign In</div></Link> 
         </div>
-            <div className="h-[100vh] ">
+            <div className="h-[100vh] mt-[5rem] ">
                 <div className="w-[28rem] m-auto text-center border p-8 mt-10 rounded">
                     <form action="" className="flex flex-col w-[90%] gap-3 mt-4 justify-center m-auto" onSubmit={handleSubmit}>
                         <h1 className="text-[2.5rem] text-left mb-8">Register</h1>

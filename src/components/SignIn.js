@@ -29,9 +29,6 @@ function SignIn() {
         e.preventDefault()
     
         const user = users.find(item => item.username === data.user && item.password === data.pass)
-
-
-        // const pass = users.find(item => item.password === data.pass)
     
         if (!user) alert('Invalid user, please check your username and password or register!!')
         else {
@@ -45,10 +42,10 @@ function SignIn() {
 
     return ( 
     <div>
-            <div className="sign-in h-[100vh]">
+            <div className="sign-in h-[140vh]">
             <img src={Logo} alt="" className="w-[14rem] p-3" />
 
-                <div className="w-[28rem] text-white bg-black/70 m-auto text-center p-8">
+                <div className="w-[28rem] text-white bg-black/70 m-auto text-center p-8 ">
 
                     <form action="" 
                     className="flex flex-col w-[90%] gap-3 mt-4 justify-center m-auto"
@@ -78,21 +75,21 @@ function SignIn() {
 
                 </div>
             </div>
-            <div className="bg-black py-16 text-white p-4 border-t-gray-900 border-t-[10px] flex items-center justify-center flex-wrap">
+            <div className="bg-black py-[5rem] text-white border-t-gray-900 border-t-[10px] flex items-center justify-center flex-wrap">
                     <div className="w-[40%]">
                         <h1 className="text-[2.5rem] font-bold">Enjoy on your TV.</h1>
                         <p className="text-[1rem]  mt-4 font-bold">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
                     </div>
                     <img src={NetflixTv} alt="" className="w-[25rem]"/>
             </div>
-            <div className="bg-black py-16 text-white p-4 border-t-gray-900 border-t-[10px] flex items-center justify-center flex-wrap">
+            <div className="bg-black py-[5rem] text-white border-t-gray-900 border-t-[10px] flex items-center justify-center flex-wrap">
                     <img src={NetflixDevices} alt="" className="w-[25rem] rounded"/>
                     <div className="w-[40%] ml-10">
                         <h1 className="text-[2.5rem] font-bold">Watch everywhere.</h1>
                         <p className="text-[1rem] mt-4 font-bold">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
                     </div>
             </div>
-            <div className="bg-black py-16 text-white p-4 border-t-gray-900 border-t-[10px] flex items-center justify-center flex-wrap">
+            <div className="bg-black py-[5rem] text-white border-t-gray-900 border-t-[10px] flex items-center justify-center flex-wrap">
                     <div className="w-[40%]">
                         <h1 className="text-[2.5rem] font-bold">Create profiles for kids.</h1>
                         <p className="text-[1rem] w-[60%] mt-4 font-bold">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
