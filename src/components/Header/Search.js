@@ -1,25 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BsSearch } from "react-icons/bs";
-import { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Context } from "./../UserList";
 
 function Search() {
-  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+  const { search, setSearch } = useContext(Context);
   return (
     <div className="flex items-center bg-white pl-2 rounded-lg">
       <input
         type="text"
-        placeholder="Titles, genres, people"
-        className="p-1 text-black"
+        placeholder="search movie"
+        className="p-1 text-black outline-0"
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => {
+          setSearch(e.target.value);
+          if (e.target.value.length === 0) {
+            alert("no match");
+          }
+        }}
         onKeyUp={(e) => {
           if (e.key === "Enter") {
-            Navigate("/searchPage");
+            navigate("/searchPage");
           }
         }}
       />
-      <BsSearch className="text-black mr-2" />
+      <BsSearch
+        className="text-black mr-2"
+        // onClick={(e) => setSearch(e.target.value)}
+      />
     </div>
   );
 }

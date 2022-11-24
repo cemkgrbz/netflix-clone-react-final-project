@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import useGetMovie from "./components/useGetMovie";
 
 import Category from "./components/categories/Category";
@@ -11,8 +11,6 @@ import Slider2 from "./components/carousels/Slider2";
 import MainContent from "./components/Header/MainContent";
 import Navbar from "./components/Header/Navbar";
 import SearchPage from "./components/Header/SearchPage";
-
-// import PopUp from "./components/PopUp";
 
 function App() {
   const movies = useGetMovie(
@@ -28,7 +26,9 @@ function App() {
 
   return (
     <div>
-      <Navbar movies={movies} />
+      {movies && movies?.results.length > 0 && (
+        <Navbar movies={movies?.results} />
+      )}
       <MainContent className="relative" />
       <div className="absolute gradient w-[100vw] h-[8rem] bottom-0"></div>
       <div className="main relative bg-black">
@@ -37,6 +37,7 @@ function App() {
         {movies && movies?.results.length > 0 && (
           <Slider1 movies={movies.results} />
         )}
+
         <Category1 title={Categories} />
 
         {movies && movies?.results.length > 0 && (
@@ -58,7 +59,6 @@ function App() {
           <Slider2 movies={movies.results} />
         )}
       </div>
-      <SearchPage movie={movies} />
     </div>
   );
 }
