@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-import Logo from "/home/user/Desktop/spaex/netflix-clone-react-final-project/src/images/netflix-logo.png"
+import Logo from "../../images/netflix-logo.png"
 import Search from "./Search";
 import { Context } from "../UserList"
 

@@ -1,5 +1,5 @@
 import React from "react";
-import videoBg from "/home/user/Desktop/spaex/netflix-clone-react-final-project/src/assets/dark-teaser.mp4"
+import videoBg from "../../assets/dark-teaser.mp4"
 import Navbar from "./Navbar"
 import {BsPlayFill, BsPlus} from "react-icons/bs"
 import {HiVolumeUp} from "react-icons/hi"
