@@ -1,8 +1,9 @@
-import React, { useState, createContext} from "react";
+import React, { useState, createContext, useEffect } from "react";
 
 export const Context = createContext();
 
 const ContextProvider = ({ children }) => {
+
   const [users, setUsers] = useState([
     {
         username: "Cem",
@@ -23,9 +24,27 @@ const ContextProvider = ({ children }) => {
 
   const [signedIn, setSignedIn] = useState([{}]);
 
+  const [movie, setMovie] = useState();
+  const [myList, setMylist] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      if (!"https://api.themoviedb.org/3/movie/now_playing?api_key=638b3df8bab99a759f1d977b58d6d261&language=en-US&page=1") return null;
+      try {
+        const response = await fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=638b3df8bab99a759f1d977b58d6d261&language=en-US&page=1");
+        const data = await response.json();
+
+        setMovie(data);
+      } catch (error) {
+        console.log(alert("Error in getmovie"), error.message);
+        return null;
+      }
+    }
+    getData();
+  }, []);
 
   return (
-    <Context.Provider value={{users, setUsers, signedIn, setSignedIn}}>
+    <Context.Provider value={{users, setUsers, signedIn, setSignedIn, movie, setMovie, myList, setMylist}}>
 
       {children}
     </Context.Provider>
