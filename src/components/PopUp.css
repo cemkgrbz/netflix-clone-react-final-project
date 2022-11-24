@@ -9,6 +9,7 @@
   background-position: 20% 80%;
   -webkit-box-shadow: inset 5px 5px 15px 5px #000000;
   box-shadow: inset 5px 5px 15px 5px #000000;
+  position: relative;
 }
 .pop-header {
   color: white;
@@ -70,4 +71,18 @@
   position: relative;
   top: 17px;
   left: 5px;
+}
+
+
+.pop-up:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: rgb(255,255,255);
+  background: linear-gradient(270deg, rgba(255,255,255,0.000001) 0%, rgba(0,0,0,1) 80%);
+  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
 }

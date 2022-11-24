@@ -29,6 +29,7 @@ const ContextProvider = ({ children }) => {
   const [movie, setMovie] = useState();
   const [myList, setMyList] = useState([]);
   const [search, setSearch] = useState("");
+  const [myList, setMyList] = useState([]);
 
   useEffect(() => {
     async function getData() {
