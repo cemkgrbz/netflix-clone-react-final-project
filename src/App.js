@@ -8,6 +8,9 @@ import Category3 from "./components/categories/Category3";
 import Category4 from "./components/categories/Category4";
 import Slider1 from "./components/carousels/Slider1";
 import Slider2 from "./components/carousels/Slider2";
+import MainContent from "./components/Header/MainContent";
+import Navbar from './components/Header/Navbar';
+
 // import PopUp from "./components/PopUp";
 
 function App() {
@@ -23,7 +26,13 @@ function App() {
   ];
 
   return (
-    <div className="main relative">
+    <div>
+      <Navbar />
+      <MainContent className="relative" />
+      <div className="absolute gradient w-[100vw] h-[8rem] bottom-0">
+
+      </div>
+      <div className="main relative bg-black">
       <Category title={Categories} />
 
       {movies && movies?.results.length > 0 && (
@@ -43,12 +52,13 @@ function App() {
 
       {movies && movies?.results.length > 0 && (
         <Slider2 movies={movies.results} />
-      )}
+        )}
       <Category4 title={Categories} />
 
       {movies && movies?.results.length > 0 && (
         <Slider2 movies={movies.results} />
-      )}
+        )}
+      </div>
     </div>
   );
 }

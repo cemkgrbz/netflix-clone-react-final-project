@@ -11,7 +11,7 @@ function Header() {
 
     console.log(signedIn)
     return ( 
-        <div className="flex justify-between items-center bg-transparent p-2 flex-wrap">
+        <div className="flex justify-between items-center bg-transparent p-2 flex-wrap fixed top-0 right-0 left-0 navbarBg h-[8rem]">
 
             <div className="flex items-center text-white gap-10 px-5 flex-wrap">
                 <div className="w-[150px]">
@@ -20,8 +20,6 @@ function Header() {
                 <div>
                     <ul className="flex gap-5">
                         <li>Home</li>
-                        <li>Tv Shows</li>
-                        <li>Movies</li>
                         <li>My List</li>
                     </ul>
                 </div>

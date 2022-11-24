@@ -37,7 +37,7 @@ function SignIn() {
         else {
             setSignedIn({user: user.username, image: user.image})
             console.log(setSignedIn)
-          navigate('/')
+          navigate('/home')
         
         }
       }
