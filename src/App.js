@@ -9,7 +9,8 @@ import Category4 from "./components/categories/Category4";
 import Slider1 from "./components/carousels/Slider1";
 import Slider2 from "./components/carousels/Slider2";
 import MainContent from "./components/Header/MainContent";
-import Navbar from './components/Header/Navbar';
+import Navbar from "./components/Header/Navbar";
+import SearchPage from "./components/Header/SearchPage";
 
 // import PopUp from "./components/PopUp";
 
@@ -27,38 +28,37 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar movies={movies} />
       <MainContent className="relative" />
-      <div className="absolute gradient w-[100vw] h-[8rem] bottom-0">
-
-      </div>
+      <div className="absolute gradient w-[100vw] h-[8rem] bottom-0"></div>
       <div className="main relative bg-black">
-      <Category title={Categories} />
+        <Category title={Categories} />
 
-      {movies && movies?.results.length > 0 && (
-        <Slider1 movies={movies.results} />
-      )}
-      <Category1 title={Categories} />
-
-      {movies && movies?.results.length > 0 && (
-        <Slider2 movies={movies.results} />
-      )}
-      <Category2 title={Categories} />
-
-      {movies && movies?.results.length > 0 && (
-        <Slider2 movies={movies.results} />
-      )}
-      <Category3 title={Categories} />
-
-      {movies && movies?.results.length > 0 && (
-        <Slider2 movies={movies.results} />
+        {movies && movies?.results.length > 0 && (
+          <Slider1 movies={movies.results} />
         )}
-      <Category4 title={Categories} />
+        <Category1 title={Categories} />
 
-      {movies && movies?.results.length > 0 && (
-        <Slider2 movies={movies.results} />
+        {movies && movies?.results.length > 0 && (
+          <Slider2 movies={movies.results} />
+        )}
+        <Category2 title={Categories} />
+
+        {movies && movies?.results.length > 0 && (
+          <Slider2 movies={movies.results} />
+        )}
+        <Category3 title={Categories} />
+
+        {movies && movies?.results.length > 0 && (
+          <Slider2 movies={movies.results} />
+        )}
+        <Category4 title={Categories} />
+
+        {movies && movies?.results.length > 0 && (
+          <Slider2 movies={movies.results} />
         )}
       </div>
+      <SearchPage movie={movies} />
     </div>
   );
 }
