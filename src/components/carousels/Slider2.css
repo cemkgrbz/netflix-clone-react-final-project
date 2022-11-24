@@ -8,7 +8,7 @@
 
 .carousel-container {
   width: 100vw;
-  height: 45vh;
+  height: 5rem;
 }
 
 .item {
@@ -31,7 +31,7 @@
 
 .image1 {
   width: 400px;
-  height: 400px;
+  /* height: 200px; */
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 12px 3px #000000;
   box-shadow: 3px 3px 12px 3px #000000;

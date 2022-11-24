@@ -11,12 +11,12 @@ function Slider1({ movies }) {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 4000, min: 1700 },
       items: 7,
       partialVisibilityGutter: 40,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1700, min: 1024 },
       items: 5,
       partialVisibilityGutter: 30,
     },
@@ -44,8 +44,8 @@ function Slider1({ movies }) {
         keyBoardControl={true}
         customTransition="all .5"
         transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        // containerClass="carousel-container"
+        // removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass={"carousel-item-padding-40-px"}
       >

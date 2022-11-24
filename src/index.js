@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MainContent from './components/Header/MainContent';
 import SignIn from './components/SignIn';
-import Register from './components/Register';
 import ContextProvider from "./components/UserList"
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -15,12 +13,9 @@ root.render(
   <ContextProvider>
   <BrowserRouter>
       <Routes>
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/register" element={<Register />} />
-
-        <Route path="/mc" element={<MainContent />} />
-
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<SignIn />} />
+        <Route path="/home" element={<App />} />
+        {/* <Route path="/mc" element={<MainContent />} /> */}
       </Routes>
   </BrowserRouter>
   </ContextProvider>

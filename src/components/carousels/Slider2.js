@@ -8,12 +8,12 @@ function Slider2({ movies }) {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 4000, min: 1500 },
       items: 7,
       partialVisibilityGutter: 40,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1500, min: 1024 },
       items: 5,
       partialVisibilityGutter: 30,
     },
@@ -45,8 +45,8 @@ function Slider2({ movies }) {
         keyBoardControl={true}
         customTransition="all .5"
         transitionDuration={500}
-        containerClass="carousel-container container-sm"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        // containerClass="carousel-container container-sm"
+        // removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass={"carousel-item-padding-40-px"}
       >
@@ -66,7 +66,7 @@ function Slider2({ movies }) {
 
                 toggleShow();
               }}
-              src={`https://image.tmdb.org/t/p/original${movie.poster_path} `}
+              src={`https://image.tmdb.org/t/p/original${movie.backdrop_path} `}
               alt="film"
               className="image1 item"
             />

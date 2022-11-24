@@ -12,12 +12,12 @@ const ContextProvider = ({ children }) => {
     {
         username: "Kirk",
         password: "12345",
-        image: "./images/avatar-2.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
     },
     {
         username: "Antonio",
         password: "1234567",
-        image: "./images/avatar-3.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
     }
   ]);
 

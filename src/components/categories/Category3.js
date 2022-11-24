@@ -3,14 +3,14 @@ function Category({ title }) {
     <div
       style={{
         width: "100%",
-        height: "100px",
+        height: "50px",
 
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-end",
       }}
     >
-      <h1 style={{ color: "white", fontSize: "1.5rem" }}>{title[3].name3}</h1>
+      <h1 style={{ color: "white", fontSize: "1.5rem", marginLeft: "2rem" }}>{title[3].name3}</h1>
     </div>
   );
 }
