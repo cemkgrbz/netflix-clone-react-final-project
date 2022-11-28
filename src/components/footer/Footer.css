@@ -1,12 +1,13 @@
 .footer {
   background-color: rgb(0, 0, 0);
   /* opacity: 0.85; */
-  height: 280px;
+  height: 15rem;
 }
 .footer-div {
+  width: fit-content;
   padding-top: 0.8rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: auto;
+  background-color: #000000;
 }
 /* div {
   color: #6c6f73;
@@ -14,9 +15,19 @@
 } */
 .div-list {
   display: flex;
-  gap: 3rem;
+  flex-wrap: wrap;
+  gap: 7rem;
   margin: 1rem;
 }
+
+.select-div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+
+}
+
 .select-div select {
   margin-top: 0.2rem;
   background-color: #000000;
@@ -33,9 +44,4 @@ a :hover {
   color: #6c6f73;
   text-decoration: underline;
 }
-.icon {
-  color: #6c6f73;
-  position: relative;
-  top: 54%;
-  left: 3px;
-}
+

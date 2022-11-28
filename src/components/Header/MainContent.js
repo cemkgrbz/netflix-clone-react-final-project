@@ -15,13 +15,13 @@ function MainContent() {
   };
 
   return (
-    <div className="relative w-[100%] h-[100vh] text-white">
-      <div className="absolute top-0 left-0 w-[100%] h-[100%] opacity-30">
+    <div className=" w-[100%] text-white pb-12">
+      <div className="absolute top-[-60px] left-0 w-[100vw] h-[100vh] opacity-60 z-[-3]">
         <Video />
       </div>
 
       <div className="pl-10 pt-28">
-        <div className="text-[2.5rem] font-bold mb-[8rem] mt-[6rem] ml-[2rem]">
+        <div className="text-[3vw] font-bold mb-[8rem] mt-[6rem] ml-[2rem]">
           Name of the Movie
         </div>
         <div className="ml-[2rem]">

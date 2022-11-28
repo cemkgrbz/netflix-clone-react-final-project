@@ -38,7 +38,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="select-div">
-          <MdLanguage className="icon" />
+          <MdLanguage className="text-[2rem]" />
           <select name="" id="">
             <option value="0">Deutsch</option>
             <option value="1">English</option>

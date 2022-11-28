@@ -34,7 +34,7 @@ function App() {
         <Category title={Categories} />
 
         {movies && movies?.results.length > 0 && (
-          <Slider1 movies={movies.results} />
+          <Slider1 movies={movies.results}/>
         )}
 
         <Category1 title={Categories} />

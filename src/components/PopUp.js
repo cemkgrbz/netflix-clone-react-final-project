@@ -57,7 +57,7 @@ export default function App({ movie, toggleShow, basicModal, setBasicModal }) {
             backgroundSize: "cover",
           }}
         >
-          <div className="content-container w-[50%] ">
+          <div className="content-container">
             <h1 className="pop-header">{movie.original_title}</h1>
             <p className="vote">
               {`Rating ${movie.vote_average}% `}
