@@ -7,7 +7,7 @@ function Video() {
   const { playing } = useContext(Context);
 
   return (
-    <div className="player-wrapper">
+    <div className="absolute top-0 left-0 h-[100vh]">
       {/* <input type="file" onChange={handleVideoUpload} /> */}
       <ReactPlayer
         url={videoBg}

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import videoBg from "../../assets/dark-teaser.mp4";
 import Navbar from "./Navbar";
 import { BsPlayFill, BsPlus } from "react-icons/bs";
@@ -6,9 +6,13 @@ import { HiVolumeUp } from "react-icons/hi";
 import { HiVolumeOff } from "react-icons/hi";
 import Video from "./Video";
 import { Context } from "./../UserList";
+import { useState } from "react";
 
 function MainContent() {
   const { setPlaying } = useContext(Context);
+
+  const [sound, setSound] = useState(false)
+
   
   const play = () => {
     console.log("click");
@@ -18,7 +22,16 @@ function MainContent() {
   return (
     <div className=" w-[100%] h-[100vh] text-white pb-12">
       <div className="absolute top-[-60px] left-0 w-[100vw] h-[100vh] opacity-60 z-[-3]">
-        <Video />
+        {/* <Video className="fixed right-0 bottom-0 min-w-[100%] min-h-[100%]"/> */}
+        <video
+        src={videoBg}
+        autoPlay
+        playsInline
+        loop
+        muted
+        {...(sound ? {muted: false} : {muted: true})}
+        className="absolute z-[-2] top-0 h-[120vh] w-[100vw] object-cover"
+      />
       </div>
 
       <div className="pl-10 pt-28">
@@ -40,14 +53,18 @@ function MainContent() {
               My List
             </button>
           </div>
-          {/* <div className="mr-[8rem]">
-            <button className="bg-white text-black p-3 rounded-full">
+          <div className="mr-[8rem]">
+
+            {
+              sound ? <button className="bg-white text-black p-3 rounded-full" onClick={() => setSound((prevState)=> !prevState )}>
+              <HiVolumeOff /> </button> : <button className="bg-white text-black p-3 rounded-full" onClick={() => setSound((prevState)=> !prevState )}>
               <HiVolumeUp />
             </button>
-            <button className="bg-white text-black p-3 rounded-full">
-              <HiVolumeOff />
-            </button>
-          </div> */}
+            }
+            
+              
+            
+          </div>
         </div>
       </div>
       <img src="" alt="" />
