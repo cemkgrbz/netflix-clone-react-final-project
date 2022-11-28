@@ -9,13 +9,14 @@ import { Context } from "./../UserList";
 
 function MainContent() {
   const { setPlaying } = useContext(Context);
+  
   const play = () => {
     console.log("click");
     return setPlaying(true);
   };
 
   return (
-    <div className=" w-[100%] text-white pb-12">
+    <div className=" w-[100%] h-[100vh] text-white pb-12">
       <div className="absolute top-[-60px] left-0 w-[100vw] h-[100vh] opacity-60 z-[-3]">
         <Video />
       </div>
@@ -30,7 +31,7 @@ function MainContent() {
         </div>
         <div className="flex gap-5 mt-8 justify-between">
           <div className="flex gap-5 flex-wrap ml-[2rem]">
-            <button className="bg-white rounded-lg shadow-slate-100 w-[8rem] p-2 text-black flex items-center justify-center ">
+            <button className="bg-white rounded-lg shadow-slate-100 w-[8rem] p-2 text-black flex items-center justify-center">
               <BsPlayFill className="text-2xl" onClick={play} />
               Play
             </button>

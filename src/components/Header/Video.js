@@ -13,8 +13,10 @@ function Video() {
         url={videoBg}
         width="100%"
         height="100%"
-        controls={true}
+        controls={false}
         playing={true}
+        muted={true}
+        loop={true}
       />
     </div>
   );

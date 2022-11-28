@@ -19,7 +19,7 @@ function SearchPage() {
   console.log(movieResults);
 
   return (
-    <div>
+    <div className="bg-black">
       <Navbar />
       {movieResults.map((item, idx) => {
         return (

@@ -11,7 +11,7 @@ function Search() {
       <input
         type="text"
         placeholder="search movie"
-        className="p-1 text-black outline-0"
+        className="p-1 text-black focus:outline-none"
         value={search}
         onChange={(e) => {
           setSearch(e.target.value);

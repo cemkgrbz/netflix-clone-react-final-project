@@ -16,7 +16,7 @@
 .div-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 7rem;
+  gap: 3rem;
   margin: 1rem;
 }
 

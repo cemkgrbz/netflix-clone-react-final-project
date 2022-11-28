@@ -29,7 +29,7 @@ function App() {
         <Navbar movies={movies?.results} />
       )}
       <MainContent className="relative" />
-      <div className="absolute gradient w-[100vw] h-[8rem] bottom-0"></div>
+      <div className="absolute gradient w-[100vw] h-[5rem] bottom-0"></div>
       <div className="main relative bg-black">
         <Category title={Categories} />
 
