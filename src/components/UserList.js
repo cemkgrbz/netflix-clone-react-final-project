@@ -29,6 +29,7 @@ const ContextProvider = ({ children }) => {
   const [movie, setMovie] = useState();
   const [myList, setMyList] = useState([]);
   const [search, setSearch] = useState("");
+  const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
     async function getData() {
@@ -64,6 +65,8 @@ const ContextProvider = ({ children }) => {
         setMyList,
         search,
         setSearch,
+        playing,
+        setPlaying,
       }}
     >
       {children}

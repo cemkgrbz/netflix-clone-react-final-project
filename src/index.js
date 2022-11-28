@@ -10,6 +10,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import MyList from "./components/MyList";
 import Register from "./components/Register";
 import SearchPage from "./components/Header/SearchPage";
+import Footer from "./components/footer/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,7 @@ root.render(
         <Route path="/register" element={<Register />} />
         <Route path="/searchPage" element={<SearchPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </ContextProvider>
 );

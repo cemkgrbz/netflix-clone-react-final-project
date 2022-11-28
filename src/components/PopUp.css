@@ -73,14 +73,17 @@
   left: 5px;
 }
 
-
 .pop-up:before {
   content: "";
   position: absolute;
-  z-index: -1;
-  background: rgb(255,255,255);
-  background: linear-gradient(270deg, rgba(255,255,255,0.000001) 0%, rgba(0,0,0,1) 80%);
-  left:0;
+  z-index: -5;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.000001) 0%,
+    rgba(0, 0, 0, 1) 80%
+  );
+  left: 0;
   top: 0;
   right: 0;
   bottom: 0;

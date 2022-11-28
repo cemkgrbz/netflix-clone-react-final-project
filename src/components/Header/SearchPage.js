@@ -50,8 +50,8 @@ function SearchPage() {
                     <div>
                       <p className="vote">
                         {`Rating ${item.vote_average}% `}
-                        <span className="info">{`Release Date ${movie.release_date} `}</span>
-                        <span className="info">{`language: ${movie.original_language}`}</span>
+                        <span className="info">{`Release Date ${item.release_date} `}</span>
+                        <span className="info">{`language: ${item.original_language}`}</span>
                       </p>
                     </div>
                     <main className="overview">

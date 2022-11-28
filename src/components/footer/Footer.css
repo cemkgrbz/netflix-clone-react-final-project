@@ -1,0 +1,41 @@
+footer {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.85;
+  height: 280px;
+}
+.footer-div {
+  padding-top: 0.8rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+div {
+  color: #6c6f73;
+  background-color: #000000;
+}
+.div-list {
+  display: flex;
+  gap: 3rem;
+  margin: 1rem;
+}
+.select-div select {
+  margin-top: 0.2rem;
+  background-color: #000000;
+  border: #6c6f73 solid;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+a {
+  color: #6c6f73;
+}
+
+a :hover {
+  color: #6c6f73;
+  text-decoration: underline;
+}
+.icon {
+  color: #6c6f73;
+  position: relative;
+  top: 54%;
+  left: 3px;
+}

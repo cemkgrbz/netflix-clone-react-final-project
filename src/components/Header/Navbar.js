@@ -3,9 +3,10 @@ import Logo from "../../images/netflix-logo.png";
 import Search from "./Search";
 import { Context } from "../UserList";
 import { Link } from "react-router-dom";
+import MyList from "../MyList";
 
 function Header() {
-  const { signedIn, setSignedIn } = useContext(Context);
+  const { signedIn, setSignedIn, myList } = useContext(Context);
 
   return (
     <div className="flex justify-between items-center bg-transparent p-2 flex-wrap  top-0 right-0 left-0 navbarBg h-[8rem]">
@@ -21,7 +22,12 @@ function Header() {
               <li className="text-white">Home</li>
             </Link>
             <Link to={"/my-list"}>
-              <li className="text-white">My List</li>
+              <li
+                className="text-white"
+                style={{ color: myList.length !== 0 ? "red" : "" }}
+              >
+                My List {myList.length}
+              </li>
             </Link>
           </ul>
         </div>

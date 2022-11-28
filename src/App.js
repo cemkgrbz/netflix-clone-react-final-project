@@ -10,7 +10,6 @@ import Slider1 from "./components/carousels/Slider1";
 import Slider2 from "./components/carousels/Slider2";
 import MainContent from "./components/Header/MainContent";
 import Navbar from "./components/Header/Navbar";
-import SearchPage from "./components/Header/SearchPage";
 
 function App() {
   const movies = useGetMovie(
