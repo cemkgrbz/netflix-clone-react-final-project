@@ -30,17 +30,16 @@ function MainContent() {
         loop
         muted
         {...(sound ? {muted: false} : {muted: true})}
-        className="absolute z-[-2] top-0 h-[120vh] w-[100vw] object-cover"
+        className="absolute z-[-2] top-0 h-[145vh] w-[100vw] object-cover"
       />
       </div>
 
-      <div className="pl-10 pt-28">
-        <div className="text-[3vw] font-bold mb-[8rem] mt-[6rem] ml-[2rem]">
-          Name of the Movie
+      <div className="pl-10 pt-18">
+        <div className="text-[5vw] font-bold mb-[3rem] mt-[6rem] ml-[2rem]">
+          Dark
         </div>
-        <div className="ml-[2rem]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum omnis
-          accusantium dolore esse aliquid? Quisquam.
+        <div className="ml-[2rem] w-[60%]">
+        A family saga with a supernatural twist, set in a German town where the disappearance of two young children exposes the relationships among four families.
         </div>
         <div className="flex gap-5 mt-8 justify-between">
           <div className="flex gap-5 flex-wrap ml-[2rem]">
@@ -67,7 +66,6 @@ function MainContent() {
           </div>
         </div>
       </div>
-      <img src="" alt="" />
     </div>
   );
 }
