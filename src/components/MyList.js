@@ -9,7 +9,7 @@ function MyList() {
   const [basicModal, setBasicModal] = useState(false);
   const toggleShow = () => setBasicModal(!basicModal);
 
-  const [state, setState] = useState(-1)
+  const [state, setState] = useState(-1);
 
   const handleRemove = (item) => {
     const newList = [...myList];
@@ -27,16 +27,16 @@ function MyList() {
       <Navbar />
       <div className="flex m-auto gap-5 w-fit flex-wrap">
         {myList.map((item, idx) => (
-          <div key={idx} className="relative">
+          <div key={idx} className="">
             <img
               src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
               className="w-[17rem] rounded mt-[3rem] "
               alt="movie-pics"
               onClick={() => {
-                setState(idx)
+                setState(idx);
 
                 // setPopup(
-                  
+
                 // );
                 // toggleShow();
               }}
@@ -50,14 +50,12 @@ function MyList() {
             {/* {popup} */}
           </div>
         ))}
-      {state>-1 ? <div><PopUp
-                    // key={idx}
-                    movie={myList[state]}
-                    toggleShow={toggleShow}
-                    basicModal={basicModal}
-                    setBasicModal={setBasicModal}
-                    
-                  /></div> : null}
+        {state > -1 ? (
+          <div className="w-[70%] h-[20rem]  p-[10px] m-auto ">
+            {<h1 className="text-red-600">{myList[state].original_title}</h1>}
+            {<p className="text-white">{myList[state].overview}</p>}
+          </div>
+        ) : null}
       </div>
     </div>
   );
