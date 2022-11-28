@@ -25,9 +25,9 @@ function MyList() {
   return (
     <div className="bg-black h-[100vh]">
       <Navbar />
-      <div className="flex m-auto gap-5 w-fit flex-wrap">
+      <div className=" flex m-auto gap-5 w-fit flex-wrap">
         {myList.map((item, idx) => (
-          <div key={idx} className="">
+          <div key={idx} className="relative">
             <img
               src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
               className="w-[17rem] rounded mt-[3rem] "
