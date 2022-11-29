@@ -22,6 +22,12 @@ const ContextProvider = ({ children }) => {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png",
     },
+    {
+      username: "User",
+      password: "1234",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png",
+    },
   ]);
 
   const [signedIn, setSignedIn] = useState([{}]);
