@@ -60,13 +60,13 @@ function MainContent() {
         <div className="flex gap-5 mt-8 justify-between">
           <div className="flex gap-5 flex-wrap ml-[2rem]">
             {play ? (
-              <button className="bg-white rounded-lg shadow-slate-100 w-[8rem] p-2 text-black flex items-center justify-center">
-                <BsPlayFill className="text-2xl" onClick={setVideoRunner} />
+              <button className="bg-white rounded-lg shadow-slate-100 w-[8rem] p-2 text-black flex items-center justify-center"  onClick={setVideoRunner} >
+                <BsPlayFill className="text-2xl"/>
                 Play
               </button>
             ) : (
-              <button className="bg-white rounded-lg shadow-slate-100 w-[8rem] p-2 text-black flex items-center justify-center">
-                <BsPause className="text-2xl" onClick={setVideoRunner} />
+              <button className="bg-white rounded-lg shadow-slate-100 w-[8rem] p-2 text-black flex items-center justify-center" onClick={setVideoRunner} >
+                <BsPause className="text-2xl" />
                 Pause
               </button>
             )}
