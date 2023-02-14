@@ -1,4 +1,4 @@
-Live Version: https://netflix-clone-react-final-project-tkfw.vercel.app/
+Live Version: https://ntflx-clone-react-final-project-cemkgrbz.vercel.app/
 
 ## Please type User as a username and 1234 as a password to sign in. 
 
